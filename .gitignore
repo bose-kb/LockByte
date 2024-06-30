@@ -1,0 +1,4 @@
+# ignore ALL files in the installed environment & archive directory
+env/
+archive/
+src/lockbyte/dist
