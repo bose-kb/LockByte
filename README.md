@@ -16,7 +16,7 @@
 
 <h1 align="center"> Secure Files, Simplified 🔑 </h1>
 
-LockByte is an easy to use, open-source file encryption application designed to cater to the needs of individuals who prioritise data security and want to protect their data without dealing with complex software. At present, LockByte supports *Windows*, *Linux*, and *Mac*.
+LockByte is an easy-to-use, open-source file encryption application designed to cater to the needs of individuals who prioritise data security and want to protect their data without dealing with complex software. At present, LockByte supports *Windows*, *Linux*, and *Mac*.
 
 Features of LockByte:
 
@@ -39,7 +39,7 @@ Features of LockByte:
 </details>
 
 <details>
-<summary>Cross platform support (Click to view).</summary>
+<summary> Cross-platform support (Click to view).</summary>
 &nbsp
 
 ![App Screenshot Windows](docs/imgs/windows.png)
@@ -65,16 +65,16 @@ Features of LockByte:
 
 ## Installation
 
-You can install the application via the platform specific installers **(recommended)** or as a python package.
+You can install the application via the platform-specific installers **(recommended)** or as a Python package.
 
 ### Standalone Installers
 
-- Windows: [lockbyte_setup.exe]()
-- Linux: [lockbyte_installer.run]()
-- macOS: [lockbyte_installer.pkg]()
+- Windows: [lockbyte_setup.exe](https://github.com/bose-kb/LockByte/releases/latest)
+- Linux: [lockbyte_installer.run](https://github.com/bose-kb/LockByte/releases/latest)
+- macOS: [lockbyte_installer.pkg](https://github.com/bose-kb/LockByte/releases/latest)
 
 > [!TIP]  
-> Since the standalone installers have not been signed (due to the additional cost required to do so), you may get warnings like *Microsoft SmartScreen* warnings on Windows,  *Gatekeeper* warnings on macOS, and a *disabled desktop launcher* shortcut problem on linux. 
+> Since the standalone installers have not been signed (due to the additional cost required to do so), you may get warnings like *Microsoft SmartScreen* warnings on Windows,  *Gatekeeper* warnings on macOS, and a *disabled desktop launcher* shortcut problem on Linux. 
 >No need to worry, the installers and executables are completely safe. Check the collapsed sections below for respective workarounds to these problems. 
 
 >[!CAUTION]
@@ -98,8 +98,8 @@ You can install the application via the platform specific installers **(recommen
 
 |              Description                      |                 Issue                         |           Solution                            |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-|When you download and try to launch the package installer, you are presented with *`macOS cannot verify developer`* warning. **Solution**: First Close the pop up. Then open *System Preferences --> Privacy & Security --> choose *`open anyway`* option.* |<img width = 100%  height = 20% src="./docs/imgs/macOS-package-warning.png">|<img width = 100%  height = 20% src="./docs/imgs/macOS-app-warning-solution.png">|
-|When you try to launch the app post installation, you are presented with *`Apple cannot check for malicious software`* warning. **Solution**: First Close the pop up. Then open *System Preferences --> Privacy & Security --> choose *`open anyway`* option.* |<img width = 100%  height = 20% src="./docs/imgs/macOS-app-warning.png">|<img width = 100%  height = 20% src="./docs/imgs/macOS-package-warning-solution.png">|
+|When you download and try to launch the package installer, you are presented with *`macOS cannot verify developer`* warning. **Solution**: First Close the pop-up. Then open *System Preferences --> Privacy & Security --> choose *`open anyway`* option.* |<img width = 100%  height = 20% src="./docs/imgs/macOS-package-warning.png">|<img width = 100%  height = 20% src="./docs/imgs/macOS-app-warning-solution.png">|
+|When you try to launch the app post installation, you are presented with *`Apple cannot check for malicious software`* warning. **Solution**: First Close the pop-up. Then open *System Preferences --> Privacy & Security --> choose *`open anyway`* option.* |<img width = 100%  height = 20% src="./docs/imgs/macOS-app-warning.png">|<img width = 100%  height = 20% src="./docs/imgs/macOS-package-warning-solution.png">|
 
 |              Description                      |                 Help Image                         |
 |-----------------------------------------------|----------------------------------------------------|
@@ -167,7 +167,11 @@ To clone this repository on your local machine run:
 6. Once the decryption process is over a *new file* with `_decrypted` suffix appended to the file name appears in the *same directory* as your chosen file. In case a folder was provided, *all file(s)* inside the *folder* as well as *sub-folder(s)* will get decrypted and saved as *new file(s)* with `_decrypted` suffix appended to the file names.
 </details>
 
-https://github.com/bose-kb/LockByte/docs/vids/demo.mp4
+
+
+https://github.com/bose-kb/LockByte/assets/85823329/b8247b77-3439-4515-9920-7b9669c9d690
+
+
 *`A quick demo of the application functionality.`*
 
 ## Example Program
@@ -186,9 +190,9 @@ from lockbyte import lock_unlock
 
 user_password = "abcd"  # pick a password
 
-# create a instance of LockByteUser
+# create an instance of LockByteUser
 user = lock_unlock.LockByteUser(passphrase=user_password)
-file_path = "./test.txt"  # provide path to file to be encrypted
+file_path = "test.txt"  # provide path to file to be encrypted
 
 with open(file_path, "rb") as file:
     if user.validate_and_generate(1):  # call validation function
@@ -198,6 +202,10 @@ with open(file_path, "rb") as file:
 #### Decryption 
 
 ```python
+# create another instance of LockByteUser
+user = lock_unlock.LockByteUser(passphrase=user_password)
+file_path = "test.txt.lockbyte"  # provide path to file to be decrypted
+
 with open(file_path, "rb") as file:
     # call decryption function
     user.decrypt(file=file, file_path=file_path)
@@ -206,7 +214,7 @@ with open(file_path, "rb") as file:
 
 ## App Workflow
 
-High Level Overview:
+High-Level Overview:
 
 ![App Workflow](docs/imgs/application-workflow.png)
 
