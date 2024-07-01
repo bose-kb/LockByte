@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lockbyte"
+version = "1.0.0"
+authors = [
+  { name="Krishnendu Bose", email="krishnendubose29@gmail.com" },
+]
+keywords = ["security", "crypto", "encryption", "hashing", "protection"]
+description = "An easy to use, open-source application for file encryption"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography"
+]
+dependencies = [
+    "pywin32 ; platform_system == 'Windows'",
+    "pillow >= 10.3.0",
+    "customtkinter >= 5.2.2",
+    "argon2-cffi >= 23.1.0",
+    "pycryptodome >= 3.20.0",
+]
+
+[project.gui-scripts]
+lockbyte-gui = "lockbyte.app:main"
+
+[project.urls]
+Homepage = "https://github.com/bose-kb/LockByte"
+Issues = "https://github.com/bose-kb/LockByte/issues"
+
