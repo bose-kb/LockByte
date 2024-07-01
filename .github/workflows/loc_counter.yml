@@ -17,9 +17,9 @@ jobs:
         id: badge
         with:
           debug: false
-          directory: ./src/
+          directory: ./
           badge: ./docs/loc_badge.svg
-          patterns: '*.py'
+          patterns: 'src/*.py'
 
       - name: Print the output
         run: |
