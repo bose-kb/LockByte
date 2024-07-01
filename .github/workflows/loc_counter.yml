@@ -17,7 +17,7 @@ jobs:
         id: badge
         with:
           debug: false
-          directory: ./
+          directory: ./src/
           badge: ./docs/loc_badge.svg
           patterns: '*.py'
 
