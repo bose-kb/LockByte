@@ -1,8 +1,3 @@
-This program (LockByte) is free software: you can redistribute it
-and/or modify it under the terms of the GNU General Public License 
-as published by the Free Software Foundation, version 3 of the License.
-
--------------------------------------------------------------------------
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -627,7 +622,7 @@ copy of the Program in return for a fee.
 -------------------------------------------------------------------------
 
 While LockByte is designed to secure your files, the author does not 
-assume any responsibility or liability for the loss or damage of data
+assume any responsibility or liability for data loss or damage
 due to its use. Users are strongly advised to back up their data 
 regularly and not solely rely on the application for data security.
 
