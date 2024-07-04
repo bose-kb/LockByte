@@ -9,7 +9,8 @@
 [![Version Info](https://img.shields.io/badge/Current_Version-1.0.0-turquoise.svg)](https://github.com/bose-kb/LockByte/releases)
 [![Made in](https://img.shields.io/badge/Made_in-Python3-blue.svg)](https://www.python.org/downloads/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text)
-[![LOC](https://tokei.rs/b1/github.com/bose-kb/LockByte?category=code&style=flat&color=62e44c)](https://github.com/bose-kb/LockByte)
+![Tests](https://github.com/bose-kb/LockByte/actions/workflows/tests_config.yml/badge.svg)
+[![LOC](https://tokei.rs/b1/github.com/bose-kb/LockByte?category=code&style=flat&color=pink)](https://github.com/bose-kb/LockByte)
 
 
 </div>
