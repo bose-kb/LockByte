@@ -2,3 +2,9 @@
 env/
 archive/
 src/lockbyte/dist
+src/lockbyte/__pycache__/
+src/lockbyte.egg-info/
+.pytest_cache/
+tests/__pycache__/
+tests/temp/
+.tox/
