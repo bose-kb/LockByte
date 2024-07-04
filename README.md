@@ -215,9 +215,10 @@ with open(file_path, "rb") as file:
 
 ## App Workflow
 
-High-Level Overview:
+|Architecture Diagram | High Level Overview |
+|:----------------------|:---------------------|
+|<img width = 100%  height = 100% src="./docs/imgs/architecture-diagram.png">|<img width = 100%  height = 100% src="./docs/imgs/application-workflow.png">|
 
-![App Workflow](docs/imgs/application-workflow.png)
 
 Detailed Overview of Encryption Request:
 
