@@ -8,3 +8,4 @@ src/lockbyte.egg-info/
 tests/__pycache__/
 tests/temp/
 .tox/
+dist/
